@@ -1,0 +1,16 @@
+1. SCM - gitlab (EC2?)
+- dev and master branches
+2. Test env - BE, FE, DB - k8s cluster (or even not needed)
+single container for each
+3. Prod env - BE, FE, DB with load balancing - k8s cluster
+1 BE, 1 DB, 2 FE? Or duplicate each instance in different regions?
+4. Logging and monitoring system for all instances
+
+Pushing to dev triggers pipeline to do:
+- quality gate control
+- build new docker image
+- put it into registry
+- deploy it to test env k8s
+- autotests?
+- manual testing
+If all OK, push to master and deploy to production?
