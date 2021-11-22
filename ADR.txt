@@ -15,8 +15,10 @@ Pushing to dev triggers CI pipeline to do:
 - push it into registry
 
 CD pipeline:
-- deploy it to test env (helm)
-- autotests?
+- deploy new image to test env (helm)
+- autotests (if I make any)
+
+Then:
 - manual testing
 
 If all OK, push to master and deploy to production
