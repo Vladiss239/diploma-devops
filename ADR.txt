@@ -1,4 +1,4 @@
-1. SCM - gitlab (EC2?)
+1. SCM - github, AWS checks changes
 - dev and master branches, gitflow
 
 2. Test env - BE, FE, DB - k8s cluster
